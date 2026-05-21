@@ -1,0 +1,260 @@
+@media (max-width: 600px) {
+  .Topnav {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+  .aboutcontainer p {
+    font-family: Roboto Mono, Courier New, Courier, monospace !important;
+    font-size: 16px;
+    left: 50px;
+    position: absolute;
+    margin-top: 2px;
+  }
+  .aboutcontainer {
+    height: 1100px;
+    background-color: #0a0a0a;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* justify-content: space-around; */
+    /* margin: auto; */
+    display: inline-grid;
+  }
+
+  .about p {
+    color: rgb(172, 169, 169);
+    margin-top: 4%;
+  }
+
+  .const {
+    margin-top: -10%;
+  }
+
+  /* .email {
+    margin-top: 30%;
+  } */
+
+  .fullname {
+    margin-top: -18%;
+  }
+
+  .dayofbirth {
+    margin-top: -25%;
+  }
+
+  .email {
+    margin-top: -31%;
+  }
+
+  .education {
+    margin-top: -30%;
+  }
+
+  .educationexp {
+    margin-top: -36%;
+  }
+
+  .Hint {
+    margin-top: -40%;
+  }
+
+  .bca {
+    margin-top: -40%;
+  }
+
+  .skills {
+    margin-top: -40%;
+  }
+
+  .skillslist {
+    margin-top: -49%;
+    line-height: 2;
+  }
+
+  .bio {
+    margin-top: -40%;
+    line-height: 1.5;
+  }
+  .rightsection img {
+    width: 50%;
+    position: absolute;
+    height: 30%;
+    bottom: 38%;
+  }
+}
+
+@media (max-width: 900px) {
+  .Topnav {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+  .aboutcontainer p {
+    font-family: Roboto Mono, Courier New, Courier, monospace !important;
+    font-size: 16px;
+    left: 50px;
+    position: absolute;
+    margin-top: 2px;
+  }
+  .aboutcontainer {
+    height: 1100px;
+    background-color: #0a0a0a;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* justify-content: space-around; */
+    /* margin: auto; */
+    display: inline-grid;
+  }
+
+  .about p {
+    color: rgb(172, 169, 169);
+    margin-top: 4%;
+  }
+
+  .const {
+    margin-top: -10%;
+  }
+
+  /* .email {
+    margin-top: 30%;
+  } */
+
+  .fullname {
+    margin-top: -18%;
+  }
+
+  .dayofbirth {
+    margin-top: -25%;
+  }
+
+  .email {
+    margin-top: -31%;
+  }
+
+  .education {
+    margin-top: -30%;
+  }
+
+  .educationexp {
+    margin-top: -36%;
+  }
+
+  .Hint {
+    margin-top: -40%;
+  }
+
+  .bca {
+    margin-top: -40%;
+  }
+
+  .skills {
+    margin-top: -40%;
+  }
+
+  .skillslist {
+    margin-top: -49%;
+    line-height: 2;
+  }
+
+  .bio {
+    margin-top: -40%;
+    line-height: 1.5;
+  }
+  .rightsection img {
+    width: 50%;
+    position: absolute;
+    height: 30%;
+    bottom: 38%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .Topnav {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+  .aboutcontainer p {
+    font-family: Roboto Mono, Courier New, Courier, monospace !important;
+    font-size: 16px;
+    left: 50px;
+    position: absolute;
+    margin-top: 2px;
+  }
+  .aboutcontainer {
+    height: 1100px;
+    background-color: #0a0a0a;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* justify-content: space-around; */
+    /* margin: auto; */
+    display: inline-grid;
+  }
+
+  .about p {
+    color: rgb(172, 169, 169);
+    margin-top: 4%;
+  }
+
+  .const {
+    margin-top: -10%;
+  }
+
+  /* .email {
+    margin-top: 30%;
+  } */
+
+  .fullname {
+    margin-top: -18%;
+  }
+
+  .dayofbirth {
+    margin-top: -25%;
+  }
+
+  .email {
+    margin-top: -31%;
+  }
+
+  .education {
+    margin-top: -30%;
+  }
+
+  .educationexp {
+    margin-top: -36%;
+  }
+
+  .Hint {
+    margin-top: -40%;
+  }
+
+  .bca {
+    margin-top: -40%;
+  }
+
+  .skills {
+    margin-top: -40%;
+  }
+
+  .skillslist {
+    margin-top: -49%;
+    line-height: 2;
+  }
+
+  .bio {
+    margin-top: -40%;
+    line-height: 1.5;
+  }
+  .rightsection img {
+    width: 50%;
+    position: absolute;
+    height: 30%;
+    bottom: 38%;
+  }
+}
