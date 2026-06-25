@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Akash Portfolio</title>
+    <link rel="stylesheet" href="resposive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/da68860664.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Resume page ONLY CSS (kept inside this file, separate from other files) -->
+    <style>
+      .resume-wrap {
+        max-width: 1000px;
+        margin: 56px auto 0;
+        padding: 0 18px;
+      }
+
+      .resume-header {
+        background: rgba(10, 10, 10, 0.9);
+        border: 1px solid rgba(156, 151, 241, 0.35);
+        border-radius: 14px;
+        padding: 24px 22px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+      }
+
+      .resume-top {
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .resume-name {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        min-width: 280px;
+      }
+
+      .resume-name h1 {
+        font-size: 2.1rem;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+      .resume-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        color: #cfc9ff;
+        margin-top: 4px;
+      }
+
+      .resume-tag .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgb(236, 100, 236);
+        box-shadow: 0 0 18px rgb(236, 100, 236);
+      }
+
+      .resume-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        min-width: 260px;
+        color: #c9c4c4;
+      }
+
+      .contact-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 0.95rem;
+      }
+
+      .contact-row i {
+        color: rgb(236, 100, 236);
+      }
+
+      .resume-divider {
+        height: 1px;
+        background: rgba(156, 151, 241, 0.35);
+        margin: 18px 0;
+      }
+
+      .resume-grid {
+        margin-top: 18px;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 18px;
+      }
+
+      .resume-section {
+        background: rgba(10, 10, 10, 0.78);
+        border: 1px solid rgba(156, 151, 241, 0.25);
+        border-radius: 14px;
+        padding: 18px 16px;
+      }
+
+      .resume-section h2 {
+        font-size: 1.25rem;
+        margin: 0 0 12px;
+        color: #e9e5ff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .resume-section h2 .icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 9px;
+        display: grid;
+        place-items: center;
+        background: rgba(156, 151, 241, 0.18);
+        border: 1px solid rgba(156, 151, 241, 0.35);
+        color: rgb(236, 100, 236);
+      }
+
+      .resume-text {
+        color: rgb(172, 169, 169);
+        line-height: 1.65;
+        font-size: 0.98rem;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 7px 10px;
+        background: rgba(156, 151, 241, 0.14);
+        border: 1px solid rgba(156, 151, 241, 0.28);
+        border-radius: 999px;
+        color: #dbd7ff;
+        font-size: 0.9rem;
+        margin: 6px 8px 0 0;
+        white-space: nowrap;
+      }
+
+      .list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .item {
+        background: rgba(0, 0, 0, 0.18);
+        border: 1px solid rgba(156, 151, 241, 0.22);
+        border-radius: 12px;
+        padding: 12px 12px;
+      }
+
+      .item-top {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+      }
+
+      .item-title {
+        font-weight: 700;
+        color: #f1efff;
+      }
+
+      .item-time {
+        color: #bdb8e6;
+        font-size: 0.93rem;
+      }
+
+      .item-desc {
+        color: rgb(172, 169, 169);
+        line-height: 1.55;
+        font-size: 0.96rem;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .resume-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+
+        .resume-wrap {
+          margin-top: 34px;
+        }
+      }
+
+      /* Make resume page not impacted by the absolute-position aboutcontainer rules */
+      .aboutcontainer {
+        position: static !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="Topnav">
+        <div class="left">Akash's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mailto:sardarakash14@gmail.com">Contact Me</a></li>
+            <li><a href="index.html#aboutme">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="resume-wrap">
+        <section class="resume-header">
+          <div class="resume-top">
+            <div class="resume-name">
+              <h1>Akash Sardar</h1>
+              <div class="resume-tag">
+                <span class="dot"></span>
+                <span style="font-weight: 700"
+                  >Computer Executive • Network Engineer • Web Developer</span
+                >
+              </div>
+            </div>
+
+            <div class="resume-contact" aria-label="Contact">
+              <div class="contact-row">
+                <i class="fa-solid fa-envelope"></i> sardarakash14@gmail.com
+              </div>
+              <div class="contact-row">
+                <i class="fa-solid fa-location-dot"></i> Udaipur, India
+              </div>
+              <div class="contact-row">
+                <i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-divider"></div>
+
+          <div class="resume-grid">
+            <section class="resume-section" aria-label="Summary">
+              <h2>
+                <span class="icon"><i class="fa-solid fa-user"></i></span
+                >Profile Summary
+              </h2>
+              <p class="resume-text">
+                Dedicated web developer and networking professional with a
+                strong foundation in HTML, CSS, JavaScript, and server-side
+                technologies. Experienced in hardware & networking and focused
+                on building clean, responsive, and high-performance web
+                experiences.
+              </p>
+
+              <div style="margin-top: 14px">
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">Node.js</span>
+                <span class="pill">jQuery</span>
+                <span class="pill">TypeScript</span>
+              </div>
+            </section>
+
+            <aside class="resume-section" aria-label="Core Skills">
+              <h2>
+                <span class="icon"><i class="fa-solid fa-bolt"></i></span>Core
+                Skills
+              </h2>
+              <div class="two-col">
+                <div>
+                  <div class="resume-text" style="margin-bottom: 10px">Web</div>
+                  <div>
+                    <span class="pill">Responsive UI</span>
+                    <span class="pill">DOM/Events</span>
+                    <span class="pill">APIs</span>
+                    <span class="pill">HTML/CSS/JS</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="resume-text" style="margin-bottom: 10px">
+                    Networking
+                  </div>
+                  <div>
+                    <span class="pill">Windows Server 2019</span>
+                    <span class="pill">VMWare</span>
+                    <span class="pill">Hardware Support</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="resume-grid" style="margin-top: 18px">
+          <section
+            id="experience"
+            class="resume-section"
+            aria-label="Experience"
+          >
+            <h2>
+              <span class="icon"><i class="fa-solid fa-briefcase"></i></span
+              >Experience
+            </h2>
+            <ul class="list">
+              <li class="item">
+                <div class="item-top">
+                  <div class="item-title">Web Development Intern / Trainee</div>
+                  <div class="item-time">2025</div>
+                </div>
+                <div class="item-desc">
+                  Completed training in web development with hands-on practice
+                  in building responsive pages and front-end components.
+                </div>
+              </li>
+              <li class="item">
+                <div class="item-top">
+                  <div class="item-title">
+                    Replacement Network Engineer in BYJU'S
+                  </div>
+                  <div class="item-time">2023</div>
+                </div>
+                <div class="item-desc">
+                  Worked as Replacement Network Engineer at BYJU'S Udaipur
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section id="education" class="resume-section" aria-label="Education">
+            <h2>
+              <span class="icon"
+                ><i class="fa-solid fa-graduation-cap"></i></span
+              >Education
+            </h2>
+            <ul class="list">
+              <li class="item">
+                <div class="item-top">
+                  <div class="item-title">
+                    Bachelor of Computer Applications (BCA)
+                  </div>
+                  <div class="item-time">2016 - 2019</div>
+                </div>
+                <div class="item-desc">MDSU</div>
+              </li>
+              <li class="item">
+                <div class="item-top">
+                  <div class="item-title">Hardware & Networking</div>
+                  <div class="item-time">2020 - 2022</div>
+                </div>
+                <div class="item-desc">HINT</div>
+              </li>
+              <li class="item">
+                <div class="item-top">
+                  <div class="item-title">
+                    Web Development at M-professional
+                  </div>
+                  <div class="item-time">2023 - 2025</div>
+                </div>
+                <div class="item-desc">M-professional</div>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="projects" class="resume-section" style="margin-top: 18px">
+          <h2>
+            <span class="icon"><i class="fa-solid fa-diagram-project"></i></span
+            >Projects
+          </h2>
+          <ul class="list">
+            <li class="item">
+              <div class="item-top">
+                <div class="item-title">Portfolio Website</div>
+                <div class="item-time">2026</div>
+              </div>
+              <div class="item-desc">
+                Personal portfolio page with responsive design and interactive
+                elements (typed text, sections, and styled layout).
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-top">
+                <div class="item-title">Network Monitoring Dashboard</div>
+                <div class="item-time">2024</div>
+              </div>
+              <div class="item-desc">
+                Designed a simple dashboard UI to visualize network status,
+                uptime, and device activity with clean cards and real-time style
+                updates.
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="item-top">
+                <div class="item-title">E-Commerce Product Landing Page</div>
+                <div class="item-time">2025</div>
+              </div>
+              <div class="item-desc">
+                Built a responsive landing page with product sections, feature
+                highlights, and conversion-focused layout using modern HTML/CSS
+                patterns.
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="pf-footer" aria-label="Site footer">
+      <div class="pf-footer__grid">
+        <section class="pf-brand" aria-label="Brand">
+          <div class="pf-brand__logo">Akash</div>
+          <div class="pf-brand__tag">
+            Computer Executive • Network Engineer • Web Developer
+          </div>
+
+          <div class="pf-brand__cta">
+            <span class="pf-brand__label">Let’s connect:</span>
+            <a class="pf-btn" href="mailto:sardarakash14@gmail.com"
+              >sardarakash14@gmail.com</a
+            >
+          </div>
+        </section>
+
+        <section class="pf-links" aria-label="Quick links">
+          <div class="pf-links__title">Quick Links</div>
+          <a class="pf-link" href="index.html">Home</a>
+          <a class="pf-link" href="index.html#aboutme">About</a>
+          <a class="pf-link" href="resume.html">Resume</a>
+          <a class="pf-link" href="#projects">Projects</a>
+        </section>
+
+        <section class="pf-social" aria-label="Social links">
+          <div class="pf-links__title">Social</div>
+          <div class="pf-social__row">
+            <a
+              class="pf-social__btn"
+              href="mailto:sardarakash14@gmail.com"
+              aria-label="Email Akash"
+            >
+              <span class="pf-social__icon">✉️</span>
+              Email
+            </a>
+            <a
+              class="pf-social__btn"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <span class="pf-social__icon">in</span>
+              LinkedIn
+            </a>
+            <a
+              class="pf-social__btn"
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <span class="pf-social__icon">⌂</span>
+              GitHub
+            </a>
+          </div>
+
+          <div class="pf-social__note">
+            Built with clean, responsive HTML/CSS/JS.
+          </div>
+        </section>
+      </div>
+
+      <div class="pf-footer__bottom">
+        <div class="pf-copyright">&copy; 2026 Akash. All rights reserved.</div>
+        <a class="pf-top" href="#" aria-label="Back to top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
