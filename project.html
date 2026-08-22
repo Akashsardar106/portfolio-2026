@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+
+    <link rel="stylesheet" href="resposive.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="project img/logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/da68860664.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="Topnav">
+        <div class="left">Akash's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mailto:sardarakash14@gmail.com">Contact Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="project.html">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="projects">
+      <h1 class="heading">My Projects</h1>
+      <p class="sub-heading">
+        Here are some projects I've built. Each one helped me learn something
+        new.
+      </p>
+
+      <!-- Project 1 -->
+
+      <div class="project">
+        <div class="project-image">
+          <img src="project img/toupload.png" alt="" />
+        </div>
+
+        <div class="project-info">
+          <h2>Weather App</h2>
+
+          <p>
+            A modern Web application that fetches and displays real-time weather
+            information, including temperature, humidity, wind speed and weather
+            condition for any location using a weather API.
+          </p>
+
+          <div class="tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Api</span>
+          </div>
+
+          <div class="buttons">
+            <a
+              href="https://akashsardar106.github.io/Weather-App/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/Akashsardar106/Weather-App"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+
+      <div class="project reverse">
+        <div class="project-image">
+          <img src="project img/lynxecommerce.png" alt="" />
+        </div>
+
+        <div class="project-info">
+          <h2>Lynx E-Commerce Website</h2>
+
+          <p>
+            A fully functional e-commerce website built with HTML, CSS, and
+            JavaScript. It features a product catalog, shopping cart, and
+            checkout process. Users can browse products, add items to their
+            cart, and complete purchases securely.
+          </p>
+
+          <div class="tech">
+            <span>HTML</span>
+            <span>JavaScript</span>
+            <span>CSS</span>
+            <span>Libraries</span>
+          </div>
+
+          <div class="buttons">
+            <a
+              href="https://akashsardar106.github.io/Lynx/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/Akashsardar106/Lynx"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+
+      <div class="project">
+        <div class="project-image">
+          <img src="project img/starbucksss.png" alt="" />
+        </div>
+
+        <div class="project-info">
+          <h2>Starbucks</h2>
+
+          <p>
+            A Starbucks clone website built with HTML, CSS, and JavaScript. It
+            replicates the look and feel of the official Starbucks website,
+            showcasing their products, menu, and store locations. Users can
+            explore the website and learn about Starbucks offerings.
+          </p>
+
+          <div class="tech">
+            <span>HTML</span>
+            <span>Css</span>
+            <span>JavaScript</span>
+            <span>Libraries</span>
+          </div>
+
+          <div class="buttons">
+            <a
+              href="https://akashsardar106.github.io/Starbucks-clone/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live Demo</a
+            >
+            <a
+              href="https://github.com/Akashsardar106/Starbucks-clone"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    .projects {
+      width: 90%;
+      max-width: 1300px;
+      margin: auto;
+      padding: 80px 0;
+    }
+
+    .heading {
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .sub-heading {
+      text-align: center;
+      color: #b8c2d0;
+      margin-bottom: 70px;
+      font-size: 18px;
+    }
+
+    .project {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+
+      margin-bottom: 100px;
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+    }
+
+    .project-image {
+      flex: 1;
+    }
+
+    .project-image img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+
+      transition: 0.4s;
+    }
+
+    .project-image img:hover {
+      transform: scale(1.03);
+    }
+
+    .project-info {
+      flex: 1;
+    }
+
+    .project-info h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .project-info p {
+      color: #cbd5e1;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      font-size: 17px;
+    }
+
+    .tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 35px;
+    }
+
+    .tech span {
+      background: #2563eb;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: white;
+
+      padding: 14px 28px;
+
+      background: #2563eb;
+
+      border-radius: 8px;
+
+      transition: 0.3s;
+    }
+
+    .buttons a:last-child {
+      background: #1e293b;
+    }
+
+    .buttons a:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 900px) {
+      .project {
+        flex-direction: column;
+      }
+
+      .reverse {
+        flex-direction: column;
+      }
+
+      .heading {
+        font-size: 40px;
+      }
+
+      .project-info {
+        text-align: center;
+      }
+
+      .tech {
+        justify-content: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</html>
